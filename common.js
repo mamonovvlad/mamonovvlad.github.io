@@ -29,18 +29,18 @@
 // 		});
 // 	});
 // // });
-$(document).ready(function(){
-	$('#form').click(function(e){
-		 e.preventDefault();
-		 $.ajax({
-				url: "mail.php",
-			  	type: "post",
-					success: function() {
+// $(document).ready(function(){
+// 	$('#form').click(function(e){
+// 		 e.preventDefault();
+// 		 $.ajax({
+// 				url: "mail.php",
+// 			  	type: "post",
+// 					success: function() {
 			
 			
-			 	}
-		 });
-		 $("#form").trigger("reset");
-	});    
+// 			 	}
+// 		 });
+// 		 $("#form").trigger("reset");
+// 	});    
 
-});
+// });
