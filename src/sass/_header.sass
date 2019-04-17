@@ -1,0 +1,165 @@
+//Author: Mamonov Vlad
+   
+// font-family: 'Raleway', sans-serif
+// font-family: 'Libre Baskerville', serif   
+html, body
+   margin: 0
+   background: #1e1e1f
+   color: #e0e0e0
+   font-size: 15px
+   font-weight: 500
+   font-family: 'Raleway', sans-serif
+
+h1,h2,h3,h4,h5,h6,li,ul,i,p
+   padding: 0
+   margin: 0
+li,ul
+   list-style: none
+div,span
+   box-sizing: border-box
+a
+   text-decoration: none
+   color: #e0e0e0
+
+[class^="icon-"]:before, [class*=" icon-"]:before 
+   margin: 0
+.active
+   color: #9cbc68!important 
+.container
+   max-width: 1100px
+   margin: 0 auto
+   z-index: 10
+   position: relative
+//Helpers
+.df
+   display: flex
+
+.db  
+   display: block
+
+.dn
+   display: none
+
+.justify-center  
+   justify-content: center
+.justify-around
+   justify-content: space-around
+.justify-between
+   justify-content: space-between
+.justify-evenly
+   justify-content: space-evenly
+.align-center
+   align-items: center
+.flex-column
+   flex-direction: column
+.flex-wrap
+   flex-wrap: wrap
+.align-end
+   align-items: end
+.align-flex__end
+   align-items: flex-end
+
+
+//Header
+body 
+   background: url(../img/fon.jpeg) center center no-repeat
+   background-size: cover
+   background-attachment: fixed
+   &:before
+      position: fixed
+      content: ''
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: rgba(0,0,0,.5)
+      z-index: 1
+section,footer
+   margin-left: 80px
+header,
+#header
+   height: 100vh
+   position: relative
+#header:hover
+   &menu
+      background: #000
+.menu
+   width: 80px
+   max-width: 80px
+   position: fixed
+   top: 0
+   left: 0
+   height: 100%
+   border: 0
+   border-radius: 0
+   text-align: center
+   z-index: 998
+   background: rgba(30,30,31,0.85)
+.logo
+   margin: 30px 0px 70px 0
+   font-size: 50px
+   & i 
+      color: #9cbc68
+      filter: drop-shadow(0 0 10px #9cbc68)
+.menu-icon
+   margin-top: 130px
+   & li,
+   & li a
+      margin: 30px 0 
+      font-size: 30px
+      color: #686a6b
+      position: relative
+      &:hover 
+         color: #9cbc68
+         transition: 500ms ease  
+      &:hover .hover-block
+         opacity: 1
+         left: 70px
+         transition: 500ms ease
+  
+
+.hover-block
+   position: absolute
+   left: -100px
+   top: 3px
+   opacity: 0
+   transition: 500ms ease
+   background-color: #9cbc68
+   border-radius: 3px
+   & p
+      color: #000000
+      padding: 5px 15px
+      font-size: 16px
+      
+
+.header-text
+   height: 100vh
+.header-text h1
+   color: #f1f1f1
+   font-size: 40px
+   position: absolute
+   top: 38%
+   animation: h1-anim 1.5s ease
+.element
+   color: #f1f1f1
+   font-size: 25px
+   font-family: 'Libre Baskerville', serif  
+.up
+   background: url(../img/arrow.svg) center no-repeat
+   position: absolute
+   background-size: 100%
+   width: 30px
+   height: 30px
+   bottom: 100px
+   left: 50%
+   animation: up 3s infinite ease
+.parallax
+   position: fixed
+   left: 15px
+.shadow
+   position: fixed
+   content: ''
+   z-index: 999
+   background: rgba(0,0,0,0.7)
+   width: 100%
+   height: 100vh

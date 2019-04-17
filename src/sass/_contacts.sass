@@ -1,0 +1,149 @@
+#contacts
+   margin-bottom: 100px
+.contacts-text
+   margin-bottom: 30px
+.block-content 
+   & i
+      font-size: 30px
+      color: #9cbc68
+      margin-bottom: 10px
+   & p,
+   & a
+      font-size: 16px
+      margin-bottom: 5px
+      transition: 500ms ease
+   & a:hover
+      color: #9cbc68
+      transition: 500ms ease
+.block-input,
+.block-text
+   width: 50%
+   padding: 20px
+.block-input input,
+#country
+   background: transparent
+   height: 30px
+   border: 2px solid #ccc
+   outline: none
+   transition: 500ms ease
+   border-radius: 6px
+   padding-left: 10px
+   &
+#country
+   width: 30%
+   margin-bottom: 0px
+   color: #fff
+   height: 36px
+   margin-right: 10px
+.block-input input,
+   margin-top: 10px
+   margin-bottom: 10px
+input:focus ,
+.block-text textarea:focus  
+   border: 2px solid #9cbc68
+   box-shadow: 0px 1px 10px #9cbc68
+   transition: 500ms ease
+
+input,
+textarea,
+button
+   color: #ccc
+   font-size: 15px
+   font-family: 'Raleway', sans-serif
+.block-text textarea 
+   width: 100%
+   min-height: 184px
+   background: transparent
+   border: 2px solid #ccc
+   outline: none
+   margin-top: 10px
+   transition: 500ms ease
+   resize: none
+   border-radius: 6px
+   padding: 10px
+   box-sizing: border-box
+.btn
+   padding: 10px 40px
+   background: transparent
+   border-radius: 25px
+   outline: none
+   border: 2px solid #9cbc68
+   transition: 500ms ease
+   font-weight: 600
+   margin-left: 20px
+   &:hover
+      background: #9cbc68
+      transition: 500ms ease
+      color: #000
+      font-weight: 600
+.skype
+   background: url(../img/skype.svg) center no-repeat
+   width: 30px
+   height: 30px
+   background-size: 100%
+.block-phone
+   width: 100%
+.wrapper
+   position: fixed
+   content: ''
+   background: #ccc
+   width: 400px
+   height: 300px
+   z-index: 1000  
+   top: -1000px
+   left: calc(50% - 200px)
+.blur
+   // filter: blur(3px)
+.top
+   top: calc(50% - 150px)
+.wrapper-header
+   padding: 5px
+   background-color: #9cbc68
+   z-index: 2
+.close
+   position: relative
+   height: 30px
+   width: 30px
+   margin-left: auto
+   cursor: pointer
+   & span
+      position: absolute
+      top: calc(50% - 1px)
+      height: 2px
+      width: 25px
+      background-color: #fff
+      transition: 500ms ease
+      right: 0
+      transform: rotate(-50deg)
+      &:before
+         content: ''
+         position: absolute
+         height: 2px
+         width: 25px
+         right: 0
+         transition: 500ms ease
+         background-color: #fff
+         top: calc(50% - 1px)
+         transform: rotate(100deg)
+.close:hover
+   & span
+      transition: 500ms ease
+      width: 20px
+      transform: rotate(-310deg)
+.close:hover
+   span:before
+      width: 20px
+      transition: 500ms ease
+      transform: rotate(435deg)
+.wrapper_text
+   background: url(../img/fon.jpeg) center center no-repeat
+   background-size: cover
+   background-attachment: fixed
+   line-height: 28px
+   font-size: 25px
+   height: 260px
+   display: flex
+   align-items: center
+   justify-content: center
+   z-index: 1
+ 

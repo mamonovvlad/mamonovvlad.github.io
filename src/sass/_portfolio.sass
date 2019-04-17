@@ -1,0 +1,95 @@
+#portfolio
+   margin-bottom: 100px  
+.content
+   padding: 50px
+   background: rgba(0,0,0,.5)
+.portfolio-text h2
+   margin-bottom: 10px
+   line-height: 28px
+   font-size: 20px
+
+
+.block img
+   width: 100%
+
+
+.block
+   width: 30%
+   margin: 10px
+   height: 150px
+   overflow: hidden
+   background-size: 100%
+   background-position: center
+   background-repeat: no-repeat
+   position: relative
+   &:before
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: rgba(0,0,0,.1)
+      z-index: 1
+   &:hover .overlay
+      border-bottom: 800px solid #9cbc68
+      border-left: 800px solid transparent
+      transition: .5s ease-out
+      z-index: 3
+     
+   &:hover .corner-overlay-content
+      opacity: 0
+      transition: .5s ease-out
+   &:hover .overlay-content
+      opacity: 1
+      transition: .5s ease-out
+      transition-delay: .3s
+      z-index: 3
+      
+  
+.overlay
+   border-bottom: 100px solid #9cbc68
+   border-left: 100px solid transparent
+   bottom: 0
+   height: 0
+   opacity: .95
+   position: absolute
+   right: 0
+   text-indent: -9999px
+   transition: .5s ease-out
+   width: 0
+   z-index: 3
+  
+.corner-overlay-content
+   bottom: 15px
+   color: #333
+   position: absolute
+   right: 15px
+   transition: .5s ease-out
+   z-index: 3
+  
+.overlay-content
+   bottom: 0
+   color: #333
+   left: 0
+   opacity: 0
+   padding: 20px
+   position: absolute
+   right: 0
+   top: 0
+   transition: .5s ease-out
+   text-align: center
+   z-index: 3
+   & p
+      border-bottom: 1px solid #333
+      padding: 0 0 12px
+      margin-bottom: 5px
+      font-family: 'Libre Baskerville', serif  
+   & a
+      display: block
+      font-size: 12px
+      padding: 5px 0
+      &:hover
+         background: #4c6621
+         border-radius: 3px
+         
