@@ -707,4 +707,29 @@ footer {
     flex-direction: column; }
   .skills-block {
     padding: 0 10px;
-    width: 100%; } }
+    width: 100%;
+    /*Contact*/ }
+  .block-icon {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+  .block-content {
+    padding: 0 10px; } }
+
+@media screen and (max-width: 425px) {
+  .block-content p, .block-content a {
+    font-size: 12px; }
+  .block-content i {
+    font-size: 25px; }
+  .block-content {
+    padding: 0px 5px;
+    width: 100%;
+    text-align: center; }
+  .box-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* end Contact*/ } }
