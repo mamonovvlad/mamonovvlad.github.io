@@ -684,4 +684,27 @@ footer {
     /*Portfolio*/ }
   .block {
     max-width: 300px;
+    width: 100%;
+    /*About*/ }
+  .about-title, .skills-title, .portfolio-text h2, .contacts-text h2 {
+    text-align: center; }
+  .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .about-foto {
+    width: 50%; }
+  .about-text {
+    width: 100%; }
+  .skills-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .skills-block {
+    padding: 0 10px;
     width: 100%; } }
