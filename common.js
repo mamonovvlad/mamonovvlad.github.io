@@ -40,7 +40,7 @@ $(document).ready(function(){
 			
 			 	}
 		 });
-		 $("#form").trigger("reset");
+		 
 	});    
-
+   $("#form").trigger("reset");
 });
