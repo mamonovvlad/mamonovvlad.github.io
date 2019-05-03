@@ -7,7 +7,6 @@
       margin-left: 0px
    .content 
       padding: 30px
-      margin: 0 10px
                               /*Portfolio*/   
    .overlay 
       border-bottom: 85px solid #9cbc68
@@ -52,7 +51,7 @@
    .box
       align-items: center
    .about-foto 
-      width: 50%
+      width: 250px
    .about-text 
       width: 100%
    .skills-box
@@ -76,7 +75,11 @@
       width: 100%
    .block-input, .block-text 
       width: 90%
+  
+
 @media screen and ( max-width: 425px)
+   .box
+      flex-direction: column-reverse
    .header-text h1 
       font-size: 25px  
    .element 
@@ -95,14 +98,15 @@
    #country 
       width: 85px
       padding: 0
-
+   .about-foto 
+      width: 200px
           /* end Contact*/
    
    footer .content 
       padding: 20px 10px
    .footer-text h3
       font-size: 15px
-   .icon-logo-1
+   .logo 
       font-size: 30px
    .footer-text .logo 
       margin-right: 5px
