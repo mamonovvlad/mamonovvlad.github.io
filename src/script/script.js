@@ -170,9 +170,14 @@ $('.burger a').click
 $('.box-menu').on('click', function(){
   $(this).toggleClass('mob-activ');
   $('.burger').fadeToggle();
-  $('.wrap').toggleClass('blur');
+  $('#blur').toggleClass('blur');
+});
+$('#blur').on('click', function(){
+  $(this).removeClass('blur');
+  $('.box-menu').removeClass('mob-activ');
+  $('.burger').fadeOut();
+ 
 
 });
-
 
 });

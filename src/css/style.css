@@ -418,15 +418,28 @@ header,
     top: 0px;
     left: 0px;
     bottom: 0px;
-    right: 0;
+    right: 0px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1; }
+
+#blur {
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease; }
 
 .blur {
   -webkit-filter: blur(20px);
   filter: blur(20px);
   -webkit-transition: 500ms ease;
   transition: 500ms ease; }
+  .blur:before {
+    position: fixed;
+    content: '';
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 80; }
 
 #portfolio {
   margin-bottom: 100px; }
