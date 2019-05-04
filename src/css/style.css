@@ -195,12 +195,13 @@ header,
         padding: 5px 20px;
         -webkit-transition: 200ms ease;
         transition: 200ms ease; }
-        .burger ul li a:hover {
-          -webkit-transition: 200ms ease;
-          transition: 200ms ease;
-          border: 1px solid #9cbc68;
-          -webkit-box-shadow: 0px 0px 10px #9cbc68;
-          box-shadow: 0px 0px 10px #9cbc68; }
+
+.active {
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+  border: 1px solid #9cbc68;
+  -webkit-box-shadow: 0px 0px 10px #9cbc68;
+  box-shadow: 0px 0px 10px #9cbc68; }
 
 .mob-menu {
   position: fixed;

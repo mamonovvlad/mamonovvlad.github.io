@@ -151,5 +151,19 @@ $(function () {
 //   $('.menu-one').fadeIn('')
 // });
 
+// $('.burger a').on('click', function(){
+//   $(this).addClass('active')
+// });
 
+$('.burger a').click
+(
+    function (e) 
+    {
+        $('.active').removeClass ('active');
+
+        var Targ = $(e.target).attr ('href');
+        if (Targ)
+            $("a[href*='" + Targ + "']").addClass ('active');
+    }
+);
 });
