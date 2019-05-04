@@ -62,18 +62,6 @@ a
 
 //Header
 body 
-   background: url(../img/fon.jpeg) center center no-repeat
-   background-size: cover
-   background-attachment: fixed
-   &:before
-      position: fixed
-      content: ''
-      top: 0
-      left: 0
-      bottom: 0
-      right: 0
-      background: rgba(0,0,0,.5)
-      z-index: 1
 section,footer
    margin-left: 80px
 header,
@@ -82,18 +70,23 @@ header,
    position: relative
 #header:hover menu
    background: #000
-.burger
-   display: none
+.burger  
    position: fixed
    right: 0
    top: 60px
    max-width: 400px
    width: 100%
    bottom: 0
+   box-shadow: -3px 0px 5px rgb(30, 30, 31)
    background: rgba(30, 30, 31, 0.9)
    z-index: 99
    & ul
-      margin: 30px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      height: 100%
+      margin-top: -60px
       text-align: center
       & li
          margin: 15px
@@ -110,8 +103,9 @@ header,
    position: fixed
    width: 100%
    height: 60px
+   box-shadow: 0px 3px 5px rgb(30, 30, 31)
    background: rgba(30, 30, 31, 0.9)
-   z-index: 99
+   z-index: 199
    display: none
    &__block
       height: 100%
@@ -152,38 +146,38 @@ header,
 //    animation-direction: alternate
 //    animation-play-state: inherit
 //    nimation-fill-mode: backwards
-.box-menu:hover .menu-line span:nth-child(1),
-.box-menu:hover .menu-line span:nth-child(2),
-.box-menu:hover .menu-one span:nth-child(1),
-.box-menu:hover .menu-one span:nth-child(2),
-.box-menu:hover .menu-two span:nth-child(1),
-.box-menu:hover .menu-two span:nth-child(2)
+.mob-menu .mob-activ .menu-line span:nth-child(1),
+.mob-menu .mob-activ .menu-line span:nth-child(2),
+.mob-menu .mob-activ .menu-one span:nth-child(1),
+.mob-menu .mob-activ .menu-one span:nth-child(2),
+.mob-menu .mob-activ .menu-two span:nth-child(1),
+.mob-menu .mob-activ .menu-two span:nth-child(2)
    margin: 3px 0px
    transition: 500ms ease
-.box-menu:hover .menu-one span:nth-child(1),
-.box-menu:hover .menu-one span:nth-child(2)
+.mob-menu .mob-activ .menu-one span:nth-child(1),
+.mob-menu .mob-activ .menu-one span:nth-child(2)
    width: 0px
    transition: 500ms ease
-.box-menu:hover .menu-two ,
-.box-menu:hover .menu-two 
+.mob-menu .mob-activ   .menu-two ,
+.mob-menu .mob-activ   .menu-two 
    transition: 500ms ease
    margin-top: -9px
-.box-menu:hover .menu-line ,
-.box-menu:hover .menu-line 
+.mob-menu .mob-activ .menu-line ,
+.mob-menu .mob-activ .menu-line 
    transition: 500ms ease
    margin-bottom: -9px
 
-.box-menu:hover .menu-line 
+.mob-menu .mob-activ  .menu-line 
    transition: 500ms ease
    transform: rotate(45deg)
-.box-menu:hover  
+.mob-menu .mob-activ    
    transition: 500ms ease
    padding: 9px 2px
-.box-menu:hover .menu-two
+.mob-menu .mob-activ  .menu-two
    transition: 500ms ease
    transform: rotate(-45deg)
-.box-menu .menu-two,
-.box-menu .menu-line
+.mob-menu .mob-activ  .menu-two,
+.mob-menu .mob-activ  .menu-line
    transition: 500ms ease 
 .menu
    width: 80px
@@ -265,3 +259,21 @@ header,
    background: rgba(0,0,0,0.7)
    width: 100%
    height: 100vh
+.wrap
+   transition: 500ms ease
+   background: url(../img/fon.jpeg) center center no-repeat
+   background-size: cover
+   background-attachment: fixed
+   &:before
+      position: fixed
+      content: ''
+      top: 0px
+      left: 0px
+      bottom: 0px
+      right: 0
+      background: rgba(0,0,0,.5)
+      z-index: 1
+   
+.blur
+   filter: blur(20px)
+   transition: 500ms ease

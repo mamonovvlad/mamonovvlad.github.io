@@ -168,7 +168,10 @@ $('.burger a').click
 );
 
 $('.box-menu').on('click', function(){
+  $(this).toggleClass('mob-activ');
   $('.burger').fadeToggle();
+  $('.wrap').toggleClass('blur');
+
 });
 
 
