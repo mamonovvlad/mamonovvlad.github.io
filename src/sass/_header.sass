@@ -85,7 +85,7 @@ header,
 .mob-menu
    position: fixed
    width: 100%
-   height: 70px
+   height: 60px
    background: rgba(30, 30, 31, 0.9)
    z-index: 99
    display: none
@@ -96,16 +96,17 @@ header,
       justify-content: center
       flex-direction: column
       & .box-menu
-         padding: 8px
+         padding: 5px
          border: 1px solid #9cbc68
          margin: 10px
          box-shadow: 0px 0px 5px #9cbc68
+         transition: 500ms ease
          & .menu-line span, 
          & .menu-one span,
          & .menu-two span
             &:nth-child(1)
                height: 3px
-               width: 10px
+               width: 8px
                display: block
                background-color: #fff
                margin: 3px 2px 
@@ -113,7 +114,7 @@ header,
                transition: 500ms ease
             &:nth-child(2)
                height: 3px
-               width: 20px
+               width: 16px
                display: block
                margin: 3px 2px 
                background-color: #fff
@@ -152,7 +153,8 @@ header,
    transition: 500ms ease
    transform: rotate(45deg)
 .box-menu:hover  
-   padding: 10px 6px
+   transition: 500ms ease
+   padding: 9px 2px
 .box-menu:hover .menu-two
    transition: 500ms ease
    transform: rotate(-45deg)
