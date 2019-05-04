@@ -146,4 +146,10 @@ $(function () {
   }, 1100);
 });
 
+// $('.box-menu').on('click', function(){
+//   $('.menu-line').fadeOut('')
+//   $('.menu-one').fadeIn('')
+// });
+
+
 });
