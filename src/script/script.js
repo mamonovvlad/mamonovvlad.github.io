@@ -166,4 +166,10 @@ $('.burger a').click
             $("a[href*='" + Targ + "']").addClass ('active');
     }
 );
+
+$('.box-menu').on('click', function(){
+  $('.burger').fadeToggle();
+});
+
+
 });
