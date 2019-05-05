@@ -481,6 +481,7 @@ header,
 
 #portfolio #loadMore,
 #about .loadMore {
+  display: none;
   padding: 10px 30px;
   width: 80px;
   margin: 15px auto; }
@@ -918,7 +919,8 @@ footer {
     max-width: 300px;
     width: 100%; }
   .header-text h1 {
-    font-size: 30px; }
+    font-size: 30px;
+    top: 40%; }
   .element {
     font-size: 20px;
     /* end Header*/
@@ -927,7 +929,10 @@ footer {
     display: none;
     max-width: 300px;
     width: 100%;
-    height: 150px;
+    height: 150px; }
+  #portfolio #loadMore,
+  #about .loadMore {
+    display: block;
     /*About*/ }
   .about-title, .skills-title, .portfolio-text h2, .contacts-text h2 {
     text-align: center; }
