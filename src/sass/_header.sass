@@ -282,17 +282,17 @@ header,
       background: rgba(0,0,0,.5)
       z-index: 2
 #blur
-   transition: 500ms ease
 .blur
    filter: blur(20px)
+   height: fill-available
    transition: 500ms ease
    &:before
       position: fixed
       content: ''
-      top: 0px
-      left: 0px
-      bottom: 0px
-      right: 0px
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
       background: rgba(0,0,0,.1)
       z-index: 80
 #portfolio #loadMore,

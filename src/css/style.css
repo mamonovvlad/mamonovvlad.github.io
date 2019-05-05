@@ -468,22 +468,21 @@ header,
     background: rgba(0, 0, 0, 0.5);
     z-index: 2; }
 
-#blur {
-  -webkit-transition: 500ms ease;
-  transition: 500ms ease; }
-
 .blur {
   -webkit-filter: blur(20px);
   filter: blur(20px);
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
   -webkit-transition: 500ms ease;
   transition: 500ms ease; }
   .blur:before {
     position: fixed;
     content: '';
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: rgba(0, 0, 0, 0.1);
     z-index: 80; }
 
