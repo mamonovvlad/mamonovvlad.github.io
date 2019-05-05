@@ -72,8 +72,8 @@ $(window).on('scroll', function(){
 ////Текст набираеться автоматом
 var typed = new Typed('.element', {
   strings: ['I Front-end Developer'],
-  typeSpeed: 50,
-  startDelay: 1000,
+  typeSpeed: 30,
+  startDelay: 200,
   cursorChar: '',
 
 });

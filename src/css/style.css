@@ -236,7 +236,7 @@ header,
         -webkit-transition: 200ms ease;
         transition: 200ms ease; }
 
-.active {
+.burger .active {
   -webkit-transition: 200ms ease;
   transition: 200ms ease;
   border: 1px solid #9cbc68;
