@@ -447,7 +447,6 @@ header,
 .wrap {
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1; }
   .wrap:before {
     background-image: url(../img/fon.jpeg);
@@ -463,6 +462,7 @@ header,
     left: 0px;
     bottom: 0px;
     right: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1; }
 
 #blur {
