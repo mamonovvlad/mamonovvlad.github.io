@@ -261,25 +261,23 @@ header,
    height: 100vh
 .wrap
    transition: 500ms ease
-   background: url(../img/fon.jpeg) center center no-repeat
-   background-size: cover
-   background-attachment: fixed
-   min-width: 100%
-   min-height: 100%
-   
-   position: relative
-   bottom: 0
-   top: 0
-   left: 0
+   background-color: rgba(0,0,0,.5)
    z-index: 1
    &:before
+      background-image: url(../img/fon.jpeg) 
+      background-size: cover
+      background-position: center
+      background-attachment: fixed
+      background-repeat: no-repeat
+      min-width: 100%
+      min-height: 100%
       position: fixed
       content: ''
       top: 0px
       left: 0px
       bottom: 0px
       right: 0px
-      background: rgba(0,0,0,.5)
+      
       z-index: 1
 #blur
    transition: 500ms ease
