@@ -412,7 +412,7 @@ header,
   color: #f1f1f1;
   font-size: 40px;
   position: absolute;
-  top: 38%;
+  top: 35%;
   -webkit-animation: h1-anim 1.5s ease;
   animation: h1-anim 1.5s ease; }
 
@@ -927,8 +927,7 @@ footer {
     max-width: 300px;
     width: 100%; }
   .header-text h1 {
-    font-size: 30px;
-    top: 40%; }
+    font-size: 30px; }
   .element {
     font-size: 20px;
     /* end Header*/
