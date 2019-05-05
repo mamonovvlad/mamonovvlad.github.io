@@ -171,7 +171,7 @@ $('.burger a').click
 $('.box-menu').on('click', function(){
   $(this).toggleClass('mob-activ');
   $('.burger').fadeToggle();
-  $('#blur').toggleClass('blur');
+  $('#blur§').toggleClass('blur');
 });
 $('#blur').on('click', function(){
   $(this).removeClass('blur');
