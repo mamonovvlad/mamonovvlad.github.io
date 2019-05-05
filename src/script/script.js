@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  background: rgb(30, 30, 31);
+  $('.overl, .prelouder').fadeOut();
 //подцветка меню 
 $(window).on("scroll", function() { 
     var scro= $(window).scrollTop();            
