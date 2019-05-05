@@ -449,7 +449,7 @@ header,
   transition: 500ms ease;
   z-index: 1; }
   .wrap:before {
-    background: url(../img/fon.jpeg) center center no-repeat scroll;
+    background: url(../img/fon.jpeg) center center no-repeat;
     background-size: cover;
     position: fixed;
     content: '';
