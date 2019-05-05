@@ -178,20 +178,26 @@ $('#blur').on('click', function(){
   $('.box-menu').removeClass('mob-activ');
   $('.burger').fadeOut();
 });
-
+function getWindowWidth() {
+  return window.innerWidth || document.body.clientWidth;
+}
+if (getWindowWidth() <= 768) {
   $('.block').slice(0, 4).show();
 $('#loadMore').on('click', function(e){
   e.preventDefault();
   $('.block:hidden').slice(0, 2).slideDown();
   });
-
-
+}
+function getWindowWidth() {
+  return window.innerWidth || document.body.clientWidth;
+}
+if (getWindowWidth() <= 768) {
   $('.skills-content').slice(0, 4).show();
 $('.loadMore').on('click', function(e){
   e.preventDefault();
   $('.skills-content:hidden').slice(0, 2).slideDown();
   });
-
+}
 
 
 });
