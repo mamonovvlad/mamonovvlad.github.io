@@ -451,13 +451,7 @@ header,
   background-size: cover;
   background-attachment: fixed;
   min-width: 100%;
-  min-height: 100%;
-  position: fixed;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  overflow: scroll; }
+  min-height: 100%; }
   .wrap:before {
     position: fixed;
     content: '';
