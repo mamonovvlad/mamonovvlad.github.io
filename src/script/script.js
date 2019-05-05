@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  background: rgb(30, 30, 31);
 //подцветка меню 
 $(window).on("scroll", function() { 
     var scro= $(window).scrollTop();            
