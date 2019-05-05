@@ -449,16 +449,7 @@ header,
   transition: 500ms ease;
   z-index: 1; }
   .wrap:before {
-    position: fixed;
-    content: '';
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 2; }
-  .wrap::after {
-    background: url(../img/fon.jpeg) center center no-repeat;
+    background: url(../img/fon.jpeg) center center no-repeat fixed;
     background-size: cover;
     position: fixed;
     content: '';
@@ -467,6 +458,15 @@ header,
     left: 0;
     right: 0;
     z-index: 1; }
+  .wrap::after {
+    position: fixed;
+    content: '';
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2; }
 
 #blur {
   -webkit-transition: 500ms ease;
